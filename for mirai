@@ -178,7 +178,7 @@ module.exports.run = async function ({ api, event, args }) {
       const x = `https://project-imagine.onrender.com/imagine?prompt=${encodeURIComponent(prompt)}&model=${ss}&ratio=${r}`;
 
     const timeout = 20000;
-    const imageStreamPromise = a.get(API.data.image, { responseType: 'arraybuffer' });
+    const imageStreamPromise = a.get(x.data.image, { responseType: 'arraybuffer' });
 
     try {
       const imageStream = await Promise.race([
