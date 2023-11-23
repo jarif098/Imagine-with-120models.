@@ -10,7 +10,7 @@ module.exports = {
     name: "imagine",
     aliases: ["t2i", "gen"],
     version: "1.0",
-    author: "JARiF | Akash Xzh",
+    author: "JARiF | Akash Xzh", //dont change author or remove ... otherwise i will turn off the API
     countDown: 10,
     role: 0,
     shortDescription: {
