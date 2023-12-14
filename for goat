@@ -183,7 +183,7 @@ module.exports = {
     const waitingMessage = await message.reply("Processing your image...");
 
     try {
-      const x = await a.get(`https://project-imagine.onrender.com/imagine?prompt=${encodeURIComponent(prompt)}&model=${ss}&ratio=${r}`);
+      const x = await a.get(`https://project-imagine-isly.onrender.com/imagine?prompt=${encodeURIComponent(prompt)}&model=${ss}&ratio=${r}`);
 
       await message.reply({
         attachment: await global.utils.getStreamFromURL(x.data.image),
